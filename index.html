@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJETO GD</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <h1>GERADOR DE DOC</h1>
+  <div id="macroFields">
+
+    <form>
+
+      <label for="nome">Nome/Razão Social:</label><br>
+      <input type="text" name="nome" id="nome"><br><br>
+
+      <label for="idnt">CPF/CNPJ:</label><br>
+      <input type="text" name="idnt" id="idnt"><br><br>
+      
+      <label for="qtd-reus">Réus p/ defesa:</label><br>
+      <select name="opt-reus" id="opt-reus">
+        <option value="" selected>Selecione uma opção...</option>
+        <option value="1">1 Réu</option>
+        <option value="2">2 Réus</option>
+        <option value="3">3 Réus</option>
+        <option value="4">4 Réus</option>
+        <option value="5">5 Réus</option>
+        <option value="6">6 Réus</option>
+        <option value="7">7 Réus</option>
+        <option value="8">8 Réus</option>
+        <option value="9">9 Réus</option>
+        <option value="10">10 Réus</option>
+      </select><br><br>
+
+      <div class="jg-reu" id="jg-reu1">
+        <label for="jg">Gratuidade de Justiça: </label>
+        <label for="nomeReu1">Réu 1:</label><br>
+        <label for="sim-ou-nao1" id="sim-ou-nao1"></label>
+        <input type="checkbox" name="sim-ou-nao1" id="sim-ou-nao1">Sim
+      </div><br>
+
+      <div class="jg-reu" id="jg-reu2">
+        <label for="nomeReu2">Réu 2:</label><br>
+        <input type="text" name="nomeReu2" id="nomeReu2">
+        <input type="checkbox" name="sim-ou-nao2" id="sim-ou-nao2">Sim
+      </div><br>
+
+      <div class="jg-reu" id="jg-reu3">
+        <label for="nomeReu3">Réu 3:</label><br>
+        <input type="text" name="nomeReu3" id="nomeReu3">
+        <input type="checkbox" name="sim-ou-nao3" id="sim-ou-nao3">Sim
+      </div><br>
+
+      <div class="jg-reu" id="jg-reu4">
+        <label for="nomeReu4">Réu 4:</label><br>
+        <input type="text" name="nomeReu4" id="nomeReu4">
+        <input type="checkbox" name="sim-ou-nao4" id="sim-ou-nao4">Sim
+      </div><br>
+
+      <div class="jg-reu" id="jg-reu5">
+        <label for="nomeReu5">Réu 5:</label><br>
+        <input type="text" name="nomeReu5" id="nomeReu5">
+        <input type="checkbox" name="sim-ou-nao5" id="sim-ou-nao5">Sim
+      </div><br>
+
+    </form>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
