@@ -7,3 +7,21 @@ body{
     display: none;
 }
 
+.acoes-tipo{
+    display: none;
+}
+
+/* .complemento-acoes{
+    display: none;
+} */
+
+#form-reus{
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    background-color: rgb(97, 97, 97);
+    width: 60vh;
+}
+
+
+

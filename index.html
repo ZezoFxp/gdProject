@@ -10,7 +10,7 @@
   <h1>GERADOR DE DOC</h1>
   <div id="macroFields">
 
-    <form>
+    <form id="form-reus">
 
       <label for="nome">Nome/Razão Social:</label><br>
       <input type="text" name="nome" id="nome"><br><br>
@@ -64,9 +64,224 @@
         <input type="checkbox" name="sim-ou-nao5" id="sim-ou-nao5">Sim
       </div><br>
 
+      <div class="jg-reu" id="jg-reu6">
+        <label for="nomeReu6">Réu 6:</label><br>
+        <input type="text" name="nomeReu6" id="nomeReu6">
+        <input type="checkbox" name="sim-ou-nao6" id="sim-ou-nao6">Sim
+      </div><br>
+
+      <div class="jg-reu" id="jg-reu7">
+        <label for="nomeReu7">Réu 7:</label><br>
+        <input type="text" name="nomeReu7" id="nomeReu7">
+        <input type="checkbox" name="sim-ou-nao7" id="sim-ou-nao7">Sim
+      </div><br>
+
+      <div class="jg-reu" id="jg-reu8">
+        <label for="nomeReu8">Réu 8:</label><br>
+        <input type="text" name="nomeReu8" id="nomeReu8">
+        <input type="checkbox" name="sim-ou-nao8" id="sim-ou-nao8">Sim
+      </div><br>
+
+      <div class="jg-reu" id="jg-reu9">
+        <label for="nomeReu9">Réu 9:</label><br>
+        <input type="text" name="nomeReu9" id="nomeReu9">
+        <input type="checkbox" name="sim-ou-nao9" id="sim-ou-nao9">Sim
+      </div><br>
+
+      <div class="jg-reu" id="jg-reu10">
+        <label for="nomeReu10">Réu 10:</label><br>
+        <input type="text" name="nomeReu10" id="nomeReu10">
+        <input type="checkbox" name="sim-ou-nao10" id="sim-ou-nao10">Sim
+      </div>
+
     </form>
+
+    <form id="form-processos">
+      <div id="qtd-acoes">
+        <label for="acoes-qtd">Quantos processo serão?</label><br>
+        <select name="acoes-qtd" id="acoes-select">
+          <option value="" selected>Selecione uma das opções...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        </div><br>
+
+        <div id="tipos-acoes">
+          <div class="acoes-tipo" id="acoes-tipo1">
+            <input type="text" id="num-acao1" placeholder="Digite o número do processo">
+            <select id="select-tipo1">
+              <option value="" selected>Selecione um tipo de ação...</option>
+              <option value="ba">Busca e Apreensão</option>
+              <option value="exec">Execução de Título Extrajudicial</option>
+              <option value="mon">Monitória</option>
+              <option value="rev">Revisional s/ ação contrária</option>
+              <option value="rev-ac">Revisional c/ ação contrária</option>
+              <option value="imob">Imobiliário</option>
+              <option value="cob">Ação de Cobrança</option>
+              <option value="execf">Execução Fiscal</option>
+              <option value="outra">Outra</option>
+            </select><br><br>
+            <input type="text" name="" id="contratos1" class="complemento-acoes" placeholder="Digite o número do contrato:">
+            <input type="text" name="" id="cda1" class="complemento-acoes" placeholder="Digite o número da CDA:">
+          </div>
+          
+          <div class="acoes-tipo" id="acoes-tipo2">
+            <input type="text" id="num-acao2" placeholder="Digite o número do processo">
+            <select id="select-tipo2">
+              <option value="" selected>Selecione um tipo de ação...</option>
+              <option value="ba">Busca e Apreensão</option>
+              <option value="exec">Execução de Título Extrajudicial</option>
+              <option value="mon">Monitória</option>
+              <option value="rev">Revisional s/ ação contrária</option>
+              <option value="rev-ac">Revisional c/ ação contrária</option>
+              <option value="imob">Imobiliário</option>
+              <option value="cob">Ação de Cobrança</option>
+              <option value="execf">Execução Fiscal</option>
+              <option value="outra">Outra</option>
+            </select><br><br>
+          </div>
+
+          <div class="acoes-tipo" id="acoes-tipo3">
+            <input type="text" id="num-acao3" placeholder="Digite o número do processo">
+            <select id="select-tipo3">
+              <option value="" selected>Selecione um tipo de ação...</option>
+              <option value="ba">Busca e Apreensão</option>
+              <option value="exec">Execução de Título Extrajudicial</option>
+              <option value="mon">Monitória</option>
+              <option value="rev">Revisional s/ ação contrária</option>
+              <option value="rev-ac">Revisional c/ ação contrária</option>
+              <option value="imob">Imobiliário</option>
+              <option value="cob">Ação de Cobrança</option>
+              <option value="execf">Execução Fiscal</option>
+              <option value="outra">Outra</option>
+            </select><br><br>
+          </div>
+
+          <div class="acoes-tipo" id="acoes-tipo4">
+            <input type="text" id="num-acao4" placeholder="Digite o número do processo">
+            <select id="select-tipo4">
+              <option value="" selected>Selecione um tipo de ação...</option>
+              <option value="ba">Busca e Apreensão</option>
+              <option value="exec">Execução de Título Extrajudicial</option>
+              <option value="mon">Monitória</option>
+              <option value="rev">Revisional s/ ação contrária</option>
+              <option value="rev-ac">Revisional c/ ação contrária</option>
+              <option value="imob">Imobiliário</option>
+              <option value="cob">Ação de Cobrança</option>
+              <option value="execf">Execução Fiscal</option>
+              <option value="outra">Outra</option>
+            </select><br><br>
+          </div>
+          
+          <div class="acoes-tipo" id="acoes-tipo5">
+            <input type="text" id="num-acao5" placeholder="Digite o número do processo">
+            <select id="select-tipo5">
+              <option value="" selected>Selecione um tipo de ação...</option>
+              <option value="ba">Busca e Apreensão</option>
+              <option value="exec">Execução de Título Extrajudicial</option>
+              <option value="mon">Monitória</option>
+              <option value="rev">Revisional s/ ação contrária</option>
+              <option value="rev-ac">Revisional c/ ação contrária</option>
+              <option value="imob">Imobiliário</option>
+              <option value="cob">Ação de Cobrança</option>
+              <option value="execf">Execução Fiscal</option>
+              <option value="outra">Outra</option>
+            </select><br><br>
+          </div>
+          
+          <div class="acoes-tipo" id="acoes-tipo6">
+            <input type="text" id="num-acao6" placeholder="Digite o número do processo">
+            <select id="select-tipo6">
+              <option value="" selected>Selecione um tipo de ação...</option>
+              <option value="ba">Busca e Apreensão</option>
+              <option value="exec">Execução de Título Extrajudicial</option>
+              <option value="mon">Monitória</option>
+              <option value="rev">Revisional s/ ação contrária</option>
+              <option value="rev-ac">Revisional c/ ação contrária</option>
+              <option value="imob">Imobiliário</option>
+              <option value="cob">Ação de Cobrança</option>
+              <option value="execf">Execução Fiscal</option>
+              <option value="outra">Outra</option>
+            </select><br><br>
+          </div>
+          
+          <div class="acoes-tipo" id="acoes-tipo7">
+            <input type="text" id="num-acao7" placeholder="Digite o número do processo">
+            <select id="select-tipo7">
+              <option value="" selected>Selecione um tipo de ação...</option>
+              <option value="ba">Busca e Apreensão</option>
+              <option value="exec">Execução de Título Extrajudicial</option>
+              <option value="mon">Monitória</option>
+              <option value="rev">Revisional s/ ação contrária</option>
+              <option value="rev-ac">Revisional c/ ação contrária</option>
+              <option value="imob">Imobiliário</option>
+              <option value="cob">Ação de Cobrança</option>
+              <option value="execf">Execução Fiscal</option>
+              <option value="outra">Outra</option>
+            </select><br><br>
+          </div>
+          
+          <div class="acoes-tipo" id="acoes-tipo8">
+            <input type="text" id="num-acao8" placeholder="Digite o número do processo">
+            <select id="select-tipo8">
+              <option value="" selected>Selecione um tipo de ação...</option>
+              <option value="ba">Busca e Apreensão</option>
+              <option value="exec">Execução de Título Extrajudicial</option>
+              <option value="mon">Monitória</option>
+              <option value="rev">Revisional s/ ação contrária</option>
+              <option value="rev-ac">Revisional c/ ação contrária</option>
+              <option value="imob">Imobiliário</option>
+              <option value="cob">Ação de Cobrança</option>
+              <option value="execf">Execução Fiscal</option>
+              <option value="outra">Outra</option>
+            </select><br><br>
+          </div>
+          
+          <div class="acoes-tipo" id="acoes-tipo9">
+            <input type="text" id="num-acao9" placeholder="Digite o número do processo">
+            <select id="select-tipo9">
+              <option value="" selected>Selecione um tipo de ação...</option>
+              <option value="ba">Busca e Apreensão</option>
+              <option value="exec">Execução de Título Extrajudicial</option>
+              <option value="mon">Monitória</option>
+              <option value="rev">Revisional s/ ação contrária</option>
+              <option value="rev-ac">Revisional c/ ação contrária</option>
+              <option value="imob">Imobiliário</option>
+              <option value="cob">Ação de Cobrança</option>
+              <option value="execf">Execução Fiscal</option>
+              <option value="outra">Outra</option>
+            </select><br><br>
+          </div>
+
+          <div class="acoes-tipo" id="acoes-tipo10">
+            <input type="text" id="num-acao10" placeholder="Digite o número do processo">
+            <select id="select-tipo10">
+              <option value="" selected>Selecione um tipo de ação...</option>
+              <option value="ba">Busca e Apreensão</option>
+              <option value="exec">Execução de Título Extrajudicial</option>
+              <option value="mon">Monitória</option>
+              <option value="rev">Revisional s/ ação contrária</option>
+              <option value="rev-ac">Revisional c/ ação contrária</option>
+              <option value="imob">Imobiliário</option>
+              <option value="cob">Ação de Cobrança</option>
+              <option value="execf">Execução Fiscal</option>
+              <option value="outra">Outra</option>
+            </select><br><br>
+          </div>
+        </div>
+
+   </form>
 
   </div>
   <script src="main.js"></script>
+  <script src="validaProcessos.js"></script>
 </body>
 </html>
