@@ -19,16 +19,16 @@ var numAcao10 = document.getElementById('acoes-tipo10'); // pega a décima div c
 
 var tipoAcoes = document.getElementById('tipo-acoes'); // pega TODA a div que escrevemos os numeros e selcionamos o tipo de ação
 var selectAcoes = document.getElementById('acoes-select'); // pega o select da quantidade de ações
-var selectTipo1 = document.getElementById('select-tipo') // pega o select do tipo de cada ação
-var selectTipo2 = document.getElementById('select-tipo') // pega o select do tipo de cada ação
-var selectTipo3 = document.getElementById('select-tipo') // pega o select do tipo de cada ação
-var selectTipo4 = document.getElementById('select-tipo') // pega o select do tipo de cada ação
-var selectTipo5 = document.getElementById('select-tipo') // pega o select do tipo de cada ação
-var selectTipo6 = document.getElementById('select-tipo') // pega o select do tipo de cada ação
-var selectTipo7 = document.getElementById('select-tipo') // pega o select do tipo de cada ação
-var selectTipo8 = document.getElementById('select-tipo') // pega o select do tipo de cada ação
-var selectTipo9 = document.getElementById('select-tipo') // pega o select do tipo de cada ação
-var selectTipo10 = document.getElementById('select-tipo') // pega o select do tipo de cada ação
+var selectTipo1 = document.getElementById('select-tipo1') // pega o select do tipo de cada ação
+var selectTipo2 = document.getElementById('select-tipo2') // pega o select do tipo de cada ação
+var selectTipo3 = document.getElementById('select-tipo3') // pega o select do tipo de cada ação
+var selectTipo4 = document.getElementById('select-tipo4') // pega o select do tipo de cada ação
+var selectTipo5 = document.getElementById('select-tipo5') // pega o select do tipo de cada ação
+var selectTipo6 = document.getElementById('select-tipo6') // pega o select do tipo de cada ação
+var selectTipo7 = document.getElementById('select-tipo7') // pega o select do tipo de cada ação
+var selectTipo8 = document.getElementById('select-tipo8') // pega o select do tipo de cada ação
+var selectTipo9 = document.getElementById('select-tipo9') // pega o select do tipo de cada ação
+var selectTipo10 = document.getElementById('select-tipo10') // pega o select do tipo de cada ação
 
 var contrato1 = document.getElementById('contratos1'); //pega o input do contrato 1
 var cda1 = document.getElementById('cda1'); //pega o input da CDA 1
@@ -37,6 +37,17 @@ function ocultarContrato(){                         //oculta os campos de contra
     [contrato1, cda1].forEach((contrato) => {
         contrato.style.display = "none"
     })
+};
+
+function validarSelect(){
+
+    if(selectTipo1.value === "ba"){
+        contrato1.style.display = "block";
+        return;
+    }else if (selectTipo1.value === "execf"){
+        cda1.style.display = "block";
+        return;
+    };
 };
 
 function ocultarNumAcao(){
@@ -50,10 +61,11 @@ selectAcoes.addEventListener('change', function() {
     
 
     ocultarNumAcao();
+    ocultarContrato();
 
     switch(selectAcoes.value){
         case "1":
-            numAcao1.style.display = "block"
+            numAcao1.style.display = "block";
             break;
         case "2":
             numAcao1.style.display = "block"
@@ -130,5 +142,12 @@ selectAcoes.addEventListener('change', function() {
             
             
         };
+
+
+selectTipo1.addEventListener('change', ()=>{
+    validarSelect();
+})
+
+
 
 });
