@@ -55,6 +55,9 @@ var cda9 = document.getElementById('cda9'); //pega o input da CDA 9
 var contrato10 = document.getElementById('contratos10'); //pega o input do contrato 10
 var cda10 = document.getElementById('cda10'); //pega o input da CDA 10
 
+const confirmBtn2 = document.getElementById('confirm-btn2');
+const backBtn2 = document.getElementById('back-btn2');
+
 /*DECLARANDO FUNÇÕES
 ----------------------------------------------------------------------------------------------------------------*/
 
@@ -272,4 +275,9 @@ selectTipo9.addEventListener('change', ()=>{
 selectTipo10.addEventListener('change', ()=>{
     ocultarContrato();
     validarSelect();
+})
+
+backBtn2.addEventListener('click', ()=>{
+    formReu.style.display = "block";
+    formProcessos.style.display = "none";
 })

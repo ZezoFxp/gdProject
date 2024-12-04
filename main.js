@@ -36,7 +36,7 @@ function ocultarTodasAsJg() {
 // Verifica se a opção selecionada é "1"
 select.addEventListener('change', function () {
 
-    
+    document.getElementById('reu-container').style.display = "block"
     ocultarTodasAsJg();
 
     switch (select.value) {
@@ -125,6 +125,10 @@ select.addEventListener('change', function () {
             jg9.style.display = "block";           
             jg10.style.display = "block";
             break;
+        case "":
+            document.getElementById('reu-container').style.display = "none";
+            break;
+
         }
 });
 
