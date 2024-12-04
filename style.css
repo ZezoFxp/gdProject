@@ -11,13 +11,12 @@ body{
     display: none;
 }
 
-/* .complemento-acoes{
+#form-processos{
     display: none;
-} */
+}
 
 #form-reus{
     padding: 10px;
-    display: none;
     flex-direction: column;
     background-color: rgb(97, 97, 97);
     width: 60vh;

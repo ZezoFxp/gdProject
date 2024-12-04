@@ -1,3 +1,5 @@
+const formReu = document.getElementById('form-reus');
+
 const nome = document.getElementById('nome');
 const nome2 = document.getElementById('nomeReu2');
 const nome3 = document.getElementById('nomeReu3');
@@ -23,12 +25,13 @@ var jg10 = document.getElementById('jg-reu10'); // Obtém o elemento div
 var select = document.getElementById('opt-reus'); // Obtém o <select> com id 'opt-reus'
 var labelReu1 = document.getElementById('sim-ou-nao1');
 
-
 function ocultarTodasAsJg() {
     [jg1, jg2, jg3, jg4, jg5, jg6, jg7, jg8, jg9, jg10].forEach((div) => {
         div.style.display = "none";
     });
 }
+
+
 
 // Verifica se a opção selecionada é "1"
 select.addEventListener('change', function () {
@@ -124,3 +127,10 @@ select.addEventListener('change', function () {
             break;
         }
 });
+
+
+document.getElementById('confirm-btn1').addEventListener('click', (e)=>{
+    e.preventDefault();
+    formReu.style.display = "none";
+    formProcessos.style.display = "block";
+})
